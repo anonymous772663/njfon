@@ -261,7 +261,7 @@ const committeeMembers = [
         {
         name: "Mukesh Maharjan ",
         role: "Honorary Member",
-        image: "assets/HonoraryMember/MukeshMaharjan.jpeg",
+        image: "assets/HonoraryMember/mukesh-maharjan.jpeg",
         description:
             "Supporting NJFON and its football community.",
         sector: "honorary"
