@@ -307,7 +307,7 @@ const committeeMembers = [
         {
         name: "Sawrose Xettri ",
         role: "Honorary Member",
-        image: "assets/HonoraryMember/Sawrosechettri.jpeg",
+        image: "assets/HonoraryMember/SawroseChettri.jpeg",
         description:
             "Supporting NJFON and its football community.",
         sector: "honorary"
