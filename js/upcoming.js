@@ -149,7 +149,7 @@ window.UPCOMING_EVENTS = [
         time: "TBD",
         location: "Kathmandu",
         address: "Kathmandu, Nepal",
-        cover: "assets/events/upcoming/women.jpeg",
+        cover: "assets/events/upcoming/Women.jpeg",
 
         shortDescription:
             "A women-focused football initiative aimed at encouraging participation, confidence, and equal opportunities for women in sports.",
@@ -239,7 +239,7 @@ window.UPCOMING_EVENTS = [
         time: "TBD",
         location: "Kathmandu",
         address: "Kathmandu, Nepal",
-        cover: "assets/events/upcoming/social.jpeg",
+        cover: "assets/events/upcoming/Social.jpeg",
 
         shortDescription:
             "A community initiative dedicated to supporting people in need, promoting kindness, and creating positive social change through unity, compassion, and collective action.",
@@ -284,7 +284,7 @@ window.UPCOMING_EVENTS = [
         time: "TBD",
         location: "Kathmandu",
         address: "Kathmandu, Nepal",
-        cover: "assets/events/upcoming/openfutsal.jpeg",
+        cover: "assets/events/upcoming/OpenFutsal.jpeg",
 
         shortDescription:
             "An exciting annual futsal competition bringing teams and football enthusiasts together to showcase their skills, promote sportsmanship, and celebrate the passion for football across Nepal.",
