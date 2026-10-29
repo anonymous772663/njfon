@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update — NJFON</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/updates.css">
+    <link rel="stylesheet" href="css/update-details.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body class="theme-blend">
+
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-trail"></div>
+<main>
+    <article class="update-story">
+        <div class="update-story-top">
+            <a href="updates.html" class="update-back">← BACK TO UPDATES</a>
+            <span> NJFON / UPDATE STORY</span>
+        </div>
+
+        <header class="update-story-heading">
+            <span id="updateCategory" class="update-story-category"></span>
+            <h1 id="updateTitle"></h1>
+            <div class="update-story-meta"><span>NJFON</span><i></i><span id="updateDate"></span></div>
+        </header>
+
+        <figure class="update-story-cover">
+            <img id="updateCover" src="" alt="">
+        </figure>
+
+        <div id="updateContent" class="update-story-content"></div>
+    </article>
+</main>
+<footer id="contact">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <div class="logo"><div class="logo-circle"><img src="assets/img/njfn-logo.png" alt="NJFON"></div><div class="logo-text">NJFON<small>Neymar Jr Fans of Nepal</small></div></div>
+            <p>Bringing Neymar Jr supporters across Nepal together through football, community, and shared passion.</p>
+        </div>
+        <div class="footer-column"><h4>Explore</h4><a href="about.html">About Us</a><a href="updates.html">Updates</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a></div>
+        <div class="footer-column"><h4>Community</h4><a href="committee.html">Committee</a><a href="contact.html">Join NJFON</a></div>
+        <div class="footer-column"><h4>Contact</h4><a href="#">Kathmandu, Nepal</a><a href="mailto:neymarfansofnepal.njfn@example.com">neymarfansofnepal.njfn@example.com</a></div>
+    </div>
+    <div class="footer-bottom"><div class="footer-bottom-left">© 2026 NJFON · All rights reserved.</div><div class="footer-bottom-right">Football · Community · Passion</div></div>
+    <div class="footer-developer">Designed &amp; Developed with <span class="footer-heart">♥</span> by <a href="mailto:asmitaalamichhane@gmail.com">Asmita</a></div>
+</footer>
+<script src="js/nav.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/updates.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const id = new URLSearchParams(location.search).get("id");
+    const update = window.UPDATES?.[id];
+    const main = document.querySelector(".update-story");
+    if (!update) {
+        main.innerHTML = '<div class="update-not-found"><span>UPDATE NOT FOUND</span><h1>This update could not be found.</h1><a href="updates.html">← Back to Updates</a></div>';
+        return;
+    }
+    document.title = `${update.title} — NJFON`;
+    document.getElementById("updateCategory").textContent = update.category;
+    document.getElementById("updateTitle").textContent = update.title;
+    document.getElementById("updateDate").textContent = update.date;
+    const cover = document.getElementById("updateCover");
+    cover.src = update.image;
+    cover.alt = update.alt;
+    cover.onerror = () => { cover.src = "assets/img/njfn-hero.jpg"; };
+    document.getElementById("updateContent").innerHTML = update.content;
+});
+</script>
+    <script src="js/cursor.js"></script>
+</body>
+</html>

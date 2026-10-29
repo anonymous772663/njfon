@@ -1,0 +1,43 @@
+/* =========================================================
+   NJFON UPDATE STORY PAGE
+   ========================================================= */
+.update-story {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 150px 35px 120px;
+}
+.update-story-top {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    padding-bottom:24px;
+    border-bottom:1px solid var(--line);
+    color:var(--muted);
+    font:900 9px/1 Montserrat;
+    letter-spacing:1.5px;
+}
+.update-story-top a { color:var(--muted); text-decoration:none; }
+.update-story-top a:hover { color:var(--yellow); }
+.update-story-heading { max-width:1000px; padding:70px 0 45px; }
+.update-story-category { color:var(--yellow); font:900 9px/1 Montserrat; letter-spacing:2px; }
+.update-story-heading h1 { margin-top:18px; color:var(--text); font:900 clamp(45px,7vw,92px)/.95 Montserrat; letter-spacing:-4px; }
+.update-story-meta { display:flex; align-items:center; gap:12px; margin-top:25px; color:var(--muted); font:900 8px/1 Montserrat; letter-spacing:1.5px; }
+.update-story-meta i { width:4px; height:4px; border-radius:50%; background:var(--yellow); }
+.update-story-cover { margin:0; overflow:hidden; background:var(--card); }
+.update-story-cover img { display:block; width:100%; height:min(68vh,680px); object-fit:cover; }
+.update-story-content { max-width:800px; margin:90px auto 0; }
+.update-story-content p { margin:0 0 28px; color:var(--muted); font-size:16px; line-height:2.05; }
+.update-not-found { min-height:60vh; display:grid; place-content:center; text-align:center; }
+.update-not-found span { color:var(--yellow); font:900 9px/1 Montserrat; letter-spacing:2px; }
+.update-not-found h1 { margin-top:15px; color:var(--text); }
+.update-not-found a { margin-top:25px; color:var(--text); }
+@media (max-width:650px) {
+    .update-story { padding:120px 22px 80px; }
+    .update-story-top { align-items:flex-start; }
+    .update-story-heading { padding:50px 0 32px; }
+    .update-story-heading h1 { letter-spacing:-2px; }
+    .update-story-cover img { height:50vh; }
+    .update-story-content { margin-top:60px; }
+    .update-story-content p { font-size:14px; }
+}

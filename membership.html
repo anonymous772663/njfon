@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Membership | NJFON</title>
+
+   
+    <link rel="stylesheet" href="css/theme.css">
+
+    <link rel="stylesheet" href="css/membership.css">
+
+    <link rel="stylesheet" href="css/mobile.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body class="theme-blend">
+
+
+    <!-- SAME CURSOR SYSTEM -->
+
+    <div class="cursor"></div>
+
+    <div class="cursor-trail"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-trail"></div>
+    <div class="cursor-trail"></div>
+
+
+    <main class="membership-page">
+
+
+        <!-- BACK HOME -->
+
+        <a
+            href="index.html"
+            class="membership-back"
+        >
+            ← BACK TO HOME
+        </a>
+
+
+        <!-- HERO -->
+
+        <section class="membership-hero">
+
+            <span class="membership-kicker">
+                NJFON / MEMBERSHIP
+            </span>
+
+            <h1>
+                JOIN THE<br>
+                <span>COMMUNITY.</span>
+            </h1>
+
+            <p>
+                Become a member of
+                <strong>Neymar Jr Fans of Nepal</strong>
+                and be part of our growing football community.
+            </p>
+
+        </section>
+
+
+        <!-- FORM -->
+
+        <section class="membership-content">
+
+            <div class="membership-intro">
+
+                <span class="membership-label">
+                    MEMBERSHIP APPLICATION
+                </span>
+
+                <h2>
+                    LET'S MAKE IT<br>
+                    <span>OFFICIAL.</span>
+                </h2>
+
+                <p>
+                    Fill in your details below to apply for
+                    membership with Neymar Jr Fans of Nepal.
+                </p>
+
+            </div>
+
+
+            <div class="membership-form-wrapper">
+
+                <form
+                    id="membershipForm"
+                    class="membership-form"
+                >
+
+
+                    <!-- NAME -->
+
+                    <div class="membership-field">
+
+                        <label for="name">
+                            FULL NAME
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            maxlength="100"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ADDRESS -->
+
+                    <div class="membership-field">
+
+                        <label for="address">
+                            ADDRESS
+                        </label>
+
+                        <input
+                            type="text"
+                            id="address"
+                            name="address"
+                            placeholder="Enter your address"
+                            maxlength="250"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL + PHONE -->
+
+                    <div class="membership-row">
+
+                        <div class="membership-field">
+
+                            <label for="email">
+                                EMAIL ADDRESS
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                maxlength="150"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="membership-field">
+
+                            <label for="phone">
+                                PHONE NUMBER
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                maxlength="30"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BLOOD GROUP -->
+
+                    <div class="membership-field">
+
+                        <label for="bloodGroup">
+                            BLOOD GROUP
+                        </label>
+
+                        <select
+                            id="bloodGroup"
+                            name="bloodGroup"
+                            required
+                        >
+
+                            <option value="">
+                                Select your blood group
+                            </option>
+
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- OPTIONAL MESSAGE -->
+
+                    <div class="membership-field">
+
+                        <label for="message">
+                            MESSAGE
+                            <span>(OPTIONAL)</span>
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            maxlength="3000"
+                            placeholder="Tell us a little about yourself..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- AGREEMENT -->
+
+                    <label class="membership-agreement">
+
+                        <input
+                            type="checkbox"
+                            id="agreement"
+                            required
+                        >
+
+                        <span>
+                            I confirm that the information I have
+                            provided is correct and I would like
+                            to become a member of Neymar Jr
+                            Fans of Nepal.
+                        </span>
+
+                    </label>
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        id="membershipSubmit"
+                        class="membership-submit"
+                    >
+                        <span id="membershipButtonText">
+                            SUBMIT APPLICATION
+                        </span>
+                    </button>
+
+
+                    <!-- STATUS -->
+
+                    <div
+                        id="membershipMessage"
+                        class="membership-message"
+                    ></div>
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+     
+<a href="index.html" class="membership-back membership-back-bottom">
+    ← Back to Home
+</a>
+
+    </main>
+
+
+    <!-- SAME THEME SYSTEM -->
+
+    <script src="js/theme.js"></script>
+    <script src="js/membership.js"></script></body>
+
+</html>

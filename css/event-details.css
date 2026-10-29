@@ -1,0 +1,560 @@
+/* =========================================================
+   NJFON EVENT STORY / EDITORIAL PAGE
+   ========================================================= */
+
+.event-story-hero {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 150px 35px 0;
+}
+
+
+/* =========================================================
+   TOP NAVIGATION
+   ========================================================= */
+
+.story-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--line);
+}
+
+.back-link,
+.story-number {
+    color: var(--muted);
+    text-decoration: none;
+    font: 900 9px/1 Montserrat;
+    letter-spacing: 1.5px;
+}
+
+.back-link:hover {
+    color: var(--yellow);
+}
+
+.story-number {
+    color: var(--yellow);
+}
+
+
+/* =========================================================
+   EVENT TITLE
+   ========================================================= */
+
+.story-heading {
+    max-width: 1000px;
+    padding: 65px 0 45px;
+}
+
+.story-status {
+    color: var(--yellow);
+    font: 900 9px/1 Montserrat;
+    letter-spacing: 2px;
+}
+
+.story-heading h1 {
+    margin-top: 17px;
+    color: var(--text);
+    font: 900 clamp(45px, 7vw, 92px)/.95 Montserrat;
+    letter-spacing: -4px;
+}
+
+
+/* =========================================================
+   COVER PHOTO
+   ========================================================= */
+
+.cover-photo {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--card);
+    border: 0;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: min(72vh, 700px);
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================================
+   EVENT META
+   ========================================================= */
+
+.event-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid var(--line);
+}
+
+.event-meta > div {
+    padding: 27px 22px 28px 0;
+    border-right: 1px solid var(--line);
+}
+
+.event-meta > div:not(:first-child) {
+    padding-left: 22px;
+}
+
+.event-meta > div:last-child {
+    border-right: 0;
+}
+
+.event-meta span {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--muted);
+    font: 900 7px/1 Montserrat;
+    letter-spacing: 1.5px;
+}
+
+.event-meta strong {
+    color: var(--text);
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ARTICLE
+   ========================================================= */
+
+.event-article {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 120px 35px 150px;
+}
+
+.article-intro {
+    max-width: 850px;
+    margin: 0 auto 125px;
+}
+
+.article-kicker {
+    color: var(--yellow);
+    font: 900 9px/1 Montserrat;
+    letter-spacing: 2px;
+}
+
+.article-intro h2 {
+    margin-top: 17px;
+    color: var(--text);
+    font: 900 clamp(32px, 4vw, 55px)/1 Montserrat;
+    letter-spacing: -2px;
+}
+
+.article-intro p {
+    margin-top: 30px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 2.05;
+}
+
+
+/* =========================================================
+   ALTERNATING STORY
+   ========================================================= */
+
+.story-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 125px;
+}
+
+.story-block {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) minmax(280px, .8fr);
+    align-items: center;
+    gap: 80px;
+}
+
+.story-block.reverse {
+    grid-template-columns: minmax(280px, .8fr) minmax(300px, 1fr);
+}
+
+.story-block.reverse .story-photo {
+    order: 2;
+}
+
+.story-block.reverse .story-copy {
+    order: 1;
+}
+
+
+/* =========================================================
+   STORY PHOTOS
+   NO EXTRA SPACE AROUND IMAGES
+   ========================================================= */
+
+.story-photo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--card);
+    border: 0;
+}
+
+.story-photo img {
+    width: 100%;
+    height: 480px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .6s ease;
+}
+
+.story-photo:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   STORY TEXT
+   ========================================================= */
+
+.story-copy {
+    max-width: 430px;
+}
+
+.story-index {
+    display: block;
+    margin-bottom: 16px;
+    color: var(--yellow);
+    font: 900 8px/1 Montserrat;
+    letter-spacing: 1.8px;
+}
+
+.story-copy h3 {
+    color: var(--text);
+    font: 900 30px/1.1 Montserrat;
+    letter-spacing: -1px;
+}
+
+.story-copy p {
+    margin-top: 19px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 2.05;
+}
+
+
+/* =========================================================
+   GALLERY SECTION
+   ========================================================= */
+
+.event-gallery-section {
+    margin-top: 150px;
+    padding-top: 70px;
+    border-top: 1px solid var(--line);
+}
+
+.gallery-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+    margin-bottom: 45px;
+}
+
+.gallery-heading h2 {
+    margin-top: 13px;
+    color: var(--text);
+    font: 900 clamp(38px, 5vw, 62px)/1 Montserrat;
+    letter-spacing: -2px;
+}
+
+.gallery-heading h2 span {
+    color: var(--yellow);
+}
+
+.gallery-heading p {
+    max-width: 380px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ORGANIZED GALLERY GRID
+   ========================================================= */
+
+.event-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 280px;
+    gap: 12px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* EVERY GALLERY ITEM */
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--card);
+}
+
+
+/* ALL IMAGES FILL THEIR BOX */
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .6s ease;
+}
+
+
+/* =========================================================
+   FEATURE IMAGE
+   ========================================================= */
+
+.gallery-item.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery-item.large img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.gallery-item:hover img {
+    transform: scale(1.035);
+}
+
+
+/* =========================================================
+   SHOW FIRST 5
+   ========================================================= */
+
+.gallery-item:nth-child(n+6) {
+    display: none;
+}
+
+.event-gallery.show-all .gallery-item:nth-child(n+6) {
+    display: block;
+}
+
+
+/* =========================================================
+   VIEW MORE BUTTON
+   ========================================================= */
+
+.view-more {
+    display: block;
+    margin: 32px auto 0;
+    padding: 13px 22px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    font: 900 9px/1 Montserrat;
+    letter-spacing: 1.5px;
+    transition:
+        border-color .3s ease,
+        color .3s ease;
+}
+
+.view-more:hover {
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+.view-more.hidden {
+    display: none;
+}
+
+
+/* =========================================================
+   MOBILE — 800px
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .event-story-hero {
+        padding: 115px 22px 0;
+    }
+
+    .story-top {
+        align-items: flex-start;
+    }
+
+    .story-number {
+        display: none;
+    }
+
+    .story-heading {
+        padding: 50px 0 35px;
+    }
+
+    .story-heading h1 {
+        font-size: clamp(38px, 12vw, 65px);
+        letter-spacing: -2.5px;
+    }
+
+    .cover-photo img {
+        height: 52vh;
+    }
+
+
+    /* EVENT META */
+
+    .event-meta {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .event-meta > div,
+    .event-meta > div:not(:first-child) {
+        padding: 20px 15px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .event-meta > div:nth-child(2) {
+        border-right: 0;
+    }
+
+    .event-meta > div:nth-child(3) {
+        padding-left: 0;
+    }
+
+    .event-meta > div:nth-child(3),
+    .event-meta > div:nth-child(4) {
+        border-bottom: 0;
+    }
+
+
+    /* ARTICLE */
+
+    .event-article {
+        padding: 85px 22px 100px;
+    }
+
+    .article-intro {
+        margin-bottom: 85px;
+    }
+
+    .article-intro p {
+        font-size: 14px;
+    }
+
+
+    /* STORY */
+
+    .story-sections {
+        gap: 75px;
+    }
+
+    .story-block,
+    .story-block.reverse {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .story-block.reverse .story-photo,
+    .story-block.reverse .story-copy {
+        order: initial;
+    }
+
+    .story-photo img {
+        height: 390px;
+    }
+
+    .story-copy {
+        max-width: none;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-heading {
+        display: block;
+    }
+
+    .gallery-heading p {
+        margin-top: 20px;
+    }
+
+    .event-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 220px;
+        gap: 10px;
+    }
+
+    .gallery-item.large {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE — 520px
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+    .event-story-hero {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .event-article {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .story-heading h1 {
+        font-size: 40px;
+    }
+
+    .cover-photo img {
+        height: 330px;
+    }
+
+    .story-photo img {
+        height: 300px;
+    }
+
+
+    /* ONE COLUMN GALLERY */
+
+    .event-gallery {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 270px;
+        gap: 10px;
+    }
+
+    .gallery-item.large {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
